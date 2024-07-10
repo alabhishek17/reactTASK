@@ -35,9 +35,10 @@ function RETRIEVE() {
 
     return (
         <div>
-            <h1>Retrieve Info</h1>
+            <h1>Retrieve Information</h1>
             <input
-            
+               min="100000000"
+               max="999999999"
                 type="number"
                 placeholder="Enter Aadhar Number"
                 value={aadharSearch}
@@ -59,7 +60,10 @@ function RETRIEVE() {
                 </div>
 
             ) : (
-                <p>No tasks found for this Aadhar number</p>
+                <center>
+                    <h1>No Data Found</h1>
+                </center>
+                
             )}
         </div>
     );
